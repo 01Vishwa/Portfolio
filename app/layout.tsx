@@ -2,6 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist } from "next/font/google"
 import "./globals.css"
+import { Navbar } from "@/components/ui/navbar"
+import { ThemeProvider } from "@/components/theme-provider"
 
 const geist = Geist({
   subsets: ["latin"],
@@ -20,9 +22,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
-    <html lang="en" className={`${geist.variable}`}>
-      <body className="font-sans antialiased">{children}</body>
-    </html>
-  )
+    return (
+      <html lang="en" className={`${geist.variable}`}> 
+        <body className="font-sans antialiased">
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+            {/* Navbar at the top */}
+            <div className="relative min-h-screen">
+              <Navbar />
+              <main className="pt-[64px]">{children}</main>
+            </div>
+          </ThemeProvider>
+        </body>
+      </html>
+    )
 }
