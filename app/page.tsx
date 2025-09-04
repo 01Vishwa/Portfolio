@@ -107,9 +107,7 @@ export default function Home() {
               <div className="space-y-3 sm:space-y-2">
                 <div className="text-sm text-muted-foreground font-mono tracking-wider">PORTFOLIO / 2025</div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
-                  Your
-                  <br />
-                  <span className="text-muted-foreground">Name</span>
+                  Vishwa R
                 </h1>
               </div>
 
@@ -150,7 +148,7 @@ export default function Home() {
                       className="group p-2 rounded-full transition-all duration-200 hover:scale-[1.05] hover:shadow-md hover:border-blue-500/50 bg-transparent"
                     >
                       <a
-                        href="https://linkedin.com/in/yourprofile"
+                        href="https://www.linkedin.com/in/r-vishwa/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn Profile"
@@ -166,7 +164,7 @@ export default function Home() {
                       className="group p-2 rounded-full transition-all duration-200 hover:scale-[1.05] hover:shadow-md hover:border-gray-500/50 bg-transparent"
                     >
                       <a
-                        href="https://github.com/yourusername"
+                        href="https://github.com/01Vishwa"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub Profile"
@@ -182,7 +180,7 @@ export default function Home() {
                       className="group p-2 rounded-full transition-all duration-200 hover:scale-[1.05] hover:shadow-md hover:border-teal-500/50 bg-transparent"
                     >
                       <a
-                        href="https://kaggle.com/yourusername"
+                        href="https://www.kaggle.com/rv1922"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Kaggle Profile"
@@ -232,7 +230,7 @@ export default function Home() {
                 <div className="space-y-3">
                   <h3 className="text-xs font-mono uppercase tracking-wider text-muted-foreground/80">Focus</h3>
                   <ul className="flex flex-wrap gap-2" role="list">
-                    {["Python", "TensorFlow", "Computer Vision", "Machine Learning", "Data Analysis"].map((skill) => (
+                    {["Python", "PyTorch", "Computer Vision", "Machine Learning", "Data Analysis"].map((skill) => (
                       <li key={skill}>
                         <span
                           className="inline-block px-3 py-1.5 text-xs border border-border/60 rounded-full text-muted-foreground hover:border-muted-foreground/80 hover:text-foreground transition-all duration-200 cursor-default focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:ring-offset-2 focus:ring-offset-background rounded-sm"
@@ -294,7 +292,7 @@ export default function Home() {
                 </div>
 
                 <div className="lg:col-span-4 flex flex-wrap gap-2 lg:justify-end mt-2 lg:mt-0">
-                  {["Python", "TensorFlow", "Computer Vision", "Deep Learning"].map((tech) => (
+                  {["Python", "PyTorch", "Computer Vision", "Deep Learning"].map((tech) => (
                     <span
                       key={tech}
                       className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
@@ -440,28 +438,28 @@ export default function Home() {
                 {
                   icon: <Code2 className="h-5 w-5" />,
                   name: "Python",
-                  level: "Expert",
+                  level: "Intermediate",
                   desc: "Data analysis, ML, web development.",
                   cat: "Programming",
                 },
                 {
                   icon: <Code2 className="h-5 w-5" />,
                   name: "R",
-                  level: "Advanced",
+                  level: "Intermediate",
                   desc: "Statistical analysis, data visualization.",
                   cat: "Programming",
                 },
                 {
                   icon: <Server className="h-5 w-5" />,
                   name: "SQL",
-                  level: "Advanced",
+                  level: "Intermediate",
                   desc: "Database queries, data manipulation.",
                   cat: "Programming",
                 },
                 {
                   icon: <Code2 className="h-5 w-5" />,
                   name: "NodeJS",
-                  level: "Intermediate",
+                  level: "Beginner",
                   desc: "Backend development, APIs.",
                   cat: "Programming",
                 },
@@ -483,14 +481,14 @@ export default function Home() {
                 {
                   icon: <Brain className="h-5 w-5" />,
                   name: "Scikit-learn",
-                  level: "Expert",
+                  level: "Advanced",
                   desc: "ML algorithms, model evaluation.",
                   cat: "Data Science",
                 },
                 {
                   icon: <Brain className="h-5 w-5" />,
                   name: "Pandas & NumPy",
-                  level: "Expert",
+                  level: "Advanced",
                   desc: "Data manipulation, numerical computing.",
                   cat: "Data Science",
                 },
@@ -498,21 +496,21 @@ export default function Home() {
                 {
                   icon: <Server className="h-5 w-5" />,
                   name: "Django",
-                  level: "Advanced",
+                  level: "Intermediate",
                   desc: "Full-stack web applications.",
                   cat: "Web Dev",
                 },
                 {
                   icon: <Server className="h-5 w-5" />,
                   name: "Flask",
-                  level: "Advanced",
+                  level: "Intermediate",
                   desc: "Lightweight web frameworks.",
                   cat: "Web Dev",
                 },
                 {
                   icon: <Server className="h-5 w-5" />,
                   name: "FastAPI",
-                  level: "Intermediate",
+                  level: "Beginner",
                   desc: "Modern API development.",
                   cat: "Web Dev",
                 },
@@ -527,21 +525,21 @@ export default function Home() {
                 {
                   icon: <Cog className="h-5 w-5" />,
                   name: "Tableau",
-                  level: "Intermediate",
+                  level: "Beginner",
                   desc: "Data visualization, analytics.",
                   cat: "Tools",
                 },
                 {
                   icon: <Cog className="h-5 w-5" />,
                   name: "Google Cloud",
-                  level: "Intermediate",
+                  level: "Beginner",
                   desc: "Cloud computing, ML services.",
                   cat: "Tools",
                 },
                 {
                   icon: <Cog className="h-5 w-5" />,
                   name: "Git & GitHub",
-                  level: "Advanced",
+                  level: "Intermediate",
                   desc: "Version control, collaboration.",
                   cat: "Tools",
                 },
@@ -673,6 +671,48 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl font-light">Let's Connect</h2>
 
               <div className="space-y-6">
+                {/* Profile Photo Avatar */}
+                <div className="flex justify-center items-center">
+                  <label htmlFor="profile-photo-upload" className="sr-only">Upload profile photo</label>
+                  <input
+                    id="profile-photo-upload"
+                    type="file"
+                    accept="image/png,image/jpeg,image/webp"
+                    style={{ display: 'none' }}
+                    onChange={e => {
+                      const file = e.target.files?.[0];
+                      if (file) {
+                        const reader = new FileReader();
+                        reader.onload = (ev) => {
+                          const img = document.getElementById('profile-photo-img');
+                          if (img && ev.target?.result) {
+                            img.setAttribute('src', ev.target.result as string);
+                          }
+                        };
+                        reader.readAsDataURL(file);
+                      }
+                    }}
+                  />
+                  <img
+                    id="profile-photo-img"
+                    src="/placeholder-user.jpg"
+                    alt="Profile photo of Full Name"
+                    width={160}
+                    height={160}
+                    className="rounded-full border border-border shadow-[0_0_0_2px_var(--accent)] focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background transition-all duration-200"
+                    style={{ objectFit: 'cover', objectPosition: 'center', boxShadow: '0 0 8px 0 var(--accent), 0 0 0 1px var(--border)' }}
+                    tabIndex={0}
+                    loading="lazy"
+                    onKeyDown={e => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        document.getElementById('profile-photo-upload')?.click();
+                      }
+                    }}
+                    onClick={() => document.getElementById('profile-photo-upload')?.click()}
+                  />
+                </div>
+                {/* End Profile Photo Avatar */}
+
                 <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
                   Always interested in new opportunities, collaborations, and conversations about data science and AI.
                 </p>
@@ -701,10 +741,10 @@ export default function Home() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { name: "GitHub", handle: "@yourusername", url: "#" },
-                  { name: "LinkedIn", handle: "yourname", url: "#" },
-                  { name: "Kaggle", handle: "@yourusername", url: "#" },
-                  { name: "Google Scholar", handle: "Your Name", url: "#" },
+                  { name: "GitHub", handle: "01Vishwa", url: "https://github.com/01Vishwa" },
+                  { name: "LinkedIn", handle: "r-vishwa", url: "https://www.linkedin.com/in/r-vishwa/" },
+                  { name: "Kaggle", handle: "rv1922", url: "https://www.kaggle.com/rv1922" },
+                  { name: "Google Scholar", handle: "@yourname", url: "#" },
                 ].map((social) => (
                   <Link
                     key={social.name}
