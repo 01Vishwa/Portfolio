@@ -85,32 +85,32 @@ function TagCard({
   return (
     <li
       className={cn(
-        "group relative list-none rounded-xl border border-transparent",
+        "group relative list-none flex items-center justify-center rounded-[14px] border border-transparent",
         colors.bg,
         "ring-1",
         colors.ring,
         "transition-all duration-300 ease-out",
         "hover:-translate-y-0.5 hover:scale-[1.02]",
         colors.glow,
-        index % 2 === 0 ? "md:translate-y-0" : "md:-translate-y-1.5",
         // fade/slide-in on load
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2",
+        "w-full h-28 sm:h-32 lg:h-36"
       )}
       style={{ transitionDelay: `${Math.min(index * 60, 240)}ms` }}
     >
-      <div className={cn("flex items-center gap-3 rounded-xl px-4 py-3", "backdrop-blur-[2px]")}>
+      <div className={cn("flex flex-row items-center justify-center w-full h-full gap-4 px-6 py-0", "rounded-[14px]")}> 
         <span
           aria-hidden="true"
           className={cn(
-            "inline-flex h-9 w-9 flex-none items-center justify-center rounded-lg",
+            "inline-flex h-12 w-12 flex-none items-center justify-center rounded-[10px]",
             colors.bg,
             colors.ring,
             "ring-1",
           )}
         >
-          <Icon className={cn("h-5 w-5", colors.text)} />
+          <Icon className={cn("h-6 w-6", colors.text)} />
         </span>
-        <span className={cn("text-sm font-medium", colors.text)}>{interest.label}</span>
+        <span className={cn("text-base font-medium", colors.text)}>{interest.label}</span>
       </div>
     </li>
   )
@@ -135,7 +135,7 @@ export default function BeyondTheCode() {
         <p className="mt-2 text-sm text-muted-foreground">My interests and hobbies</p>
       </header>
 
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4" aria-label="Interest tags">
+  <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" aria-label="Interest tags">
         {interests.map((interest, i) => (
           <TagCard key={interest.key} interest={interest} index={i} inView={inView} />
         ))}

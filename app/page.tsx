@@ -294,14 +294,14 @@ export default function Home() {
                     />
                     <div className="flex-1 space-y-3">
                       <div>
-                        <h3 className="text-lg sm:text-xl font-medium">AI Healthcare Analytics</h3>
+                        <h3 className="text-lg sm:text-xl font-medium">Skill Sync Ai - Ai Driven Insights Engine</h3>
                         <p className="text-muted-foreground leading-relaxed">
-                          Advanced computer vision models for medical imaging analysis and biomarker extraction from
-                          retinal fundus images.
+                          RAG-powered framework to revolutionize résumé screening by harnessing multi-source candidate data, 
+                          driving accuracy, fairness, and explainability in talent evaluation.
                         </p>
                       </div>
                       <div className="flex flex-wrap gap-2">
-                        {["Python", "TensorFlow", "PyTorch", "Computer Vision", "Healthcare AI"].map((tech) => (
+                        {["Python", "GCP", "Lanchain", "Chat Bot", "Large Language Models"].map((tech) => (
                           <Badge key={tech} variant="secondary" className="px-2 py-1 text-xs">
                             {tech}
                           </Badge>
@@ -552,7 +552,7 @@ export default function Home() {
           className="min-h-screen py-20 sm:py-32 opacity-0"
         >
           <div className="space-y-12 sm:space-y-16">
-            <h2 className="text-3xl sm:text-4xl font-light">Recent Thoughts</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold">Certificates</h2>
 
             <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
               {[
