@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useEffect, useRef, useState } from "react"
-import { BookOpen, Tv, Film, Gamepad2, Music } from "lucide-react"
+import { BookOpen, Tv, Film, Gamepad2, Music, ChefHat } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 // Color system (3-5 colors total):
@@ -19,11 +19,12 @@ type Interest = {
 }
 
 const interests: Interest[] = [
-  { key: "reading", label: "Reading Novels", icon: BookOpen, color: "sky" },
+  { key: "reading", label: "Reading Books", icon: BookOpen, color: "sky" },
   { key: "tv", label: "Watching TV Shows", icon: Tv, color: "emerald" },
   { key: "movies", label: "Watching Movies", icon: Film, color: "amber" },
   { key: "gaming", label: "Gaming", icon: Gamepad2, color: "sky" },
   { key: "music", label: "Listening to Music", icon: Music, color: "emerald" },
+  { key: "cooking", label: "Cooking", icon: ChefHat, color: "amber" },
 ]
 
 function useInView<T extends HTMLElement>(options?: IntersectionObserverInit) {

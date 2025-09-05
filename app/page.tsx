@@ -154,7 +154,7 @@ export default function Home() {
                       variant="outline"
                       className="group gap-2 rounded-full transition-all duration-200 hover:scale-[1.02] hover:shadow-sm hover:border-muted-foreground/50 bg-transparent"
                     >
-                      <a href="/Vishwa_R.pdf" target="_blank" rel="noreferrer">
+                      <a href="/resume.pdf" target="_blank" rel="noreferrer">
                         <FileText className="h-4 w-4" aria-hidden="true" />
                         <span>View Resume</span>
                       </a>
@@ -258,16 +258,8 @@ export default function Home() {
                   <div className="space-y-2">
                     <div className="text-base font-medium text-foreground">Data Science Intern</div>
                     <div className="text-sm text-muted-foreground">
-                      @{" "}
-                      <a
-                        href="https://prediscan.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-foreground hover:text-muted-foreground transition-colors duration-200 underline decoration-1 underline-offset-2 hover:decoration-2 focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:ring-offset-2 focus:ring-offset-background rounded-sm"
-                        aria-label="Prediscan Medtech company website"
-                      >
+                      {" "}
                         Prediscan Medtech
-                      </a>
                     </div>
                     <div className="text-xs text-muted-foreground/70 font-mono">2024 — 2025</div>
                   </div>
@@ -310,40 +302,55 @@ export default function Home() {
             </div>
 
             <div className="space-y-8 sm:space-y-12">
-              <div className="group grid lg:grid-cols-12 gap-4 sm:gap-8 py-6 sm:py-8 border-b border-border/50 hover:border-border transition-colors duration-500">
-                <div className="lg:col-span-2">
-                  <div className="text-xl sm:text-2xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500">
-                    2024 - 2025
-                  </div>
-                </div>
-
-                <div className="lg:col-span-6 space-y-3">
-                  <div className="flex flex-col gap-1">
-                    <div className="flex items-center gap-3">
-                      <h3 className="text-lg sm:text-xl font-medium">Data Science Intern</h3>
+              <div className="group py-6 sm:py-8 border-b border-border/50 hover:border-border transition-colors duration-500">
+                <div className="grid lg:grid-cols-12 gap-4 sm:gap-8">
+                  <div className="lg:col-span-2">
+                    <div className="text-xl sm:text-2xl font-light text-muted-foreground group-hover:text-foreground transition-colors duration-500">
+                      2024 - 2025
                     </div>
-                    <div className="flex flex-wrap gap-2 mt-1">
-                    </div>
-                    <div className="text-muted-foreground mt-2">Prediscan Medtech, Chennai, India</div>
                   </div>
-                  <div className="space-y-2 text-muted-foreground leading-relaxed max-w-lg mt-2">
-                    <ul className="list-disc list-inside space-y-1">
-                      <li>Developed HDL cholesterol prediction models using computer vision on retinal imaging datasets, enhancing diagnostic capabilities.</li>
-                      <li>Built AI-powered biomarker extraction solution achieving 98.5% R² accuracy and 99.9% correlation for cardiovascular risk assessment.</li>
-                      <li>Designed automated preprocessing pipeline for 6,000+ retinal images with advanced augmentation techniques.</li>
-                    </ul>
-                  </div>
-                </div>
 
-                <div className="lg:col-span-4 flex flex-wrap gap-2 lg:justify-end mt-2 lg:mt-0">
-                  {["Python", "PyTorch", "Deep Learning"].map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                  <div className="lg:col-span-10">
+                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
+                      {/* Left: Job Title and Company */}
+                      <div className="flex-1">
+                        <div className="flex flex-col gap-1">
+                          <h3 className="text-lg sm:text-xl font-medium">Data Science Intern</h3>
+                          <div className="text-muted-foreground">Prediscan Medtech, Chennai, India</div>
+                        </div>
+                        <div className="space-y-2 text-muted-foreground leading-relaxed max-w-lg mt-3">
+                          <ul className="list-disc list-inside space-y-1">
+                            <li>Developed HDL cholesterol prediction models using computer vision on retinal imaging datasets, enhancing diagnostic capabilities.</li>
+                            <li>Built AI-powered biomarker extraction solution achieving 98.5% R² accuracy and 99.9% correlation for cardiovascular risk assessment.</li>
+                            <li>Designed automated preprocessing pipeline for 6,000+ retinal images with advanced augmentation techniques.</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      {/* Right: Skill Tags */}
+                      <div className="flex flex-col gap-2 lg:items-end">
+                        {/* First Row: Python and PyTorch */}
+                        <div className="flex gap-2">
+                          <span className="px-2 py-1 text-xs bg-background text-muted-foreground rounded border border-border transition-colors duration-500">
+                            Python
+                          </span>
+                          <span className="px-2 py-1 text-xs bg-background text-muted-foreground rounded border border-border transition-colors duration-500">
+                            PyTorch
+                          </span>
+                        </div>
+                        
+                        {/* Second Row: Computer Vision and Deep Learning */}
+                        <div className="flex gap-2">
+                          <span className="px-2 py-1 text-xs bg-background text-muted-foreground rounded border border-border transition-colors duration-500">
+                            Computer Vision
+                          </span>
+                          <span className="px-2 py-1 text-xs bg-background text-muted-foreground rounded border border-border transition-colors duration-500">
+                            Deep Learning
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -525,14 +532,14 @@ export default function Home() {
                 {
                   icon: <Brain className="h-5 w-5" />,
                   name: "TensorFlow",
-                  level: "Intermediate",
+                  level: "Advanced",
                   desc: "Deep learning, neural networks.",
                   cat: "Data Science",
                 },
                 {
                   icon: <Brain className="h-5 w-5" />,
                   name: "PyTorch",
-                  level: "Intermediate",
+                  level: "Advanced",
                   desc: "Computer vision, model training.",
                   cat: "Data Science",
                 },
@@ -650,32 +657,19 @@ export default function Home() {
           <div className="space-y-12 sm:space-y-16">
             <h2 className="text-3xl sm:text-4xl font-bold">Certificates</h2>
 
-            <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
+            <div className="space-y-6 sm:space-y-8">
               {[
                 {
-                  title: "AI in Healthcare: The Future is Now",
-                  excerpt:
-                    "Exploring how computer vision and machine learning are revolutionizing medical diagnostics.",
-                  date: "Dec 2024",
-                  readTime: "5 min",
+                  title: "Microsoft Power BI Desktop for Business Intelligence",
+                  excerpt: "Comprehensive course covering Power BI fundamentals, data modeling, visualization techniques, and business intelligence dashboard creation.",
+                  date: "Sept 2023",
+                  link: "https://www.udemy.com/certificate/UC-cdda0577-14fd-4edd-a691-63beccf0b085/",
                 },
                 {
-                  title: "Data Science in Practice",
-                  excerpt: "Lessons learned from building predictive models on real-world datasets.",
-                  date: "Nov 2024",
-                  readTime: "8 min",
-                },
-                {
-                  title: "The Power of Visualization",
-                  excerpt: "How effective data visualization can transform business decision-making.",
-                  date: "Oct 2024",
-                  readTime: "6 min",
-                },
-                {
-                  title: "Machine Learning Ethics",
-                  excerpt: "Considerations for responsible AI development in healthcare applications.",
-                  date: "Sep 2024",
-                  readTime: "4 min",
+                  title: "Machine Learning A-Z: AI, Python & R",
+                  excerpt: "Complete machine learning course covering algorithms, data preprocessing, regression, classification, clustering, and deep learning with Python & R.",
+                  date: "Apr 2024",
+                  link: "https://www.udemy.com/certificate/UC-d887c517-24a4-4b85-8cc2-564f0c76f508/",
                 },
               ].map((post, index) => (
                 <article
@@ -685,7 +679,6 @@ export default function Home() {
                   <div className="space-y-4">
                     <div className="flex items-center justify-between text-xs text-muted-foreground font-mono">
                       <span>{post.date}</span>
-                      <span>{post.readTime}</span>
                     </div>
 
                     <h3 className="text-lg sm:text-xl font-medium group-hover:text-muted-foreground transition-colors duration-300">
@@ -694,8 +687,13 @@ export default function Home() {
 
                     <p className="text-muted-foreground leading-relaxed">{post.excerpt}</p>
 
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                      <span>Read more</span>
+                    <a
+                      href={post.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300"
+                    >
+                      <span>View Credential</span>
                       <svg
                         className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
                         fill="none"
@@ -709,7 +707,7 @@ export default function Home() {
                           d="M17 8l4 4m0 0l-4 4m4-4H3"
                         />
                       </svg>
-                    </div>
+                    </a>
                   </div>
                 </article>
               ))}
@@ -753,8 +751,8 @@ export default function Home() {
                   />
                   <img
                     id="profile-photo-img"
-                    src="/placeholder-user.jpg"
-                    alt="Profile photo of Full Name"
+                    src="/me.jpg"
+                    alt="I'm Vishwa R"
                     width={160}
                     height={160}
                     className="rounded-full border border-border shadow-[0_0_0_2px_var(--accent)] focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background transition-all duration-200"
@@ -802,7 +800,6 @@ export default function Home() {
                   { name: "GitHub", handle: "01Vishwa", url: "https://github.com/01Vishwa" },
                   { name: "LinkedIn", handle: "r-vishwa", url: "https://www.linkedin.com/in/r-vishwa/" },
                   { name: "Kaggle", handle: "rv1922", url: "https://www.kaggle.com/rv1922" },
-                  { name: "Google Scholar", handle: "@yourname", url: "#" },
                 ].map((social) => (
                   <Link
                     key={social.name}
