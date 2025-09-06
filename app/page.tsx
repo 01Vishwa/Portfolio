@@ -1,13 +1,15 @@
 "use client"
 
+import React from "react"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
-import { Button } from "../components/ui/button"
-import { Badge } from "../components/ui/badge"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github, Code2, Server, Brain, Cog, FileText, Linkedin, ChevronUp } from "lucide-react"
-import BeyondTheCode from "../components/beyond-the-code"
-import LoadingScreen from "../components/ui/loading-screen"
+import BeyondTheCode from "@/components/beyond-the-code"
+import LoadingScreen from "@/components/ui/loading-screen"
+import EducationDialog from "@/components/education-dialog"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -22,7 +24,7 @@ export default function Home() {
     // Hide loading screen after 2.5 seconds
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 2500)
+    }, 1500)
 
     return () => clearTimeout(timer)
   }, [])
@@ -150,19 +152,19 @@ export default function Home() {
                   <div className="flex items-center gap-2">
                     <Button
                       asChild
-                      size="sm"
+                      size="default"
                       variant="outline"
-                      className="group gap-2 rounded-full transition-all duration-200 hover:scale-[1.02] hover:shadow-sm hover:border-muted-foreground/50 bg-transparent"
+                      className="group gap-3 rounded-lg transition-all duration-200 hover:scale-[1.02] hover:shadow-sm hover:border-muted-foreground/50 bg-transparent px-6 py-3"
                     >
                       <a href="/resume.pdf" target="_blank" rel="noreferrer">
-                        <FileText className="h-4 w-4" aria-hidden="true" />
+                        <FileText className="h-5 w-5" aria-hidden="true" />
                         <span>View Resume</span>
                       </a>
                     </Button>
                     {/* Education icon button/modal trigger */}
                     <div className="flex items-center">
                       {/* EducationDialog renders its own trigger button */}
-                      {require("../components/education-dialog").default()}
+                      <EducationDialog />
                     </div>
                   </div>
 
@@ -383,7 +385,7 @@ export default function Home() {
                     />
                     <div className="flex-1 space-y-3">
                       <div>
-                        <h3 className="text-lg sm:text-xl font-medium">Skill Sync Ai - Ai Driven Insights Engine</h3>
+                        <h3 className="text-lg sm:text-xl font-medium">SkillSync AI: Precision Hiring Powered by AI</h3>
                         <p className="text-muted-foreground leading-relaxed">
                           RAG-powered framework to revolutionize résumé screening by harnessing multi-source candidate data, 
                           driving accuracy, fairness, and explainability in talent evaluation.
@@ -410,7 +412,7 @@ export default function Home() {
                   desc: "Predictive models using Logistic Regression and Random Forest achieving 87.75% accuracy on IBM's HR dataset.",
                   tech: ["Python", "Flask", "Plotly", "Dash"],
                   demo: "#",
-                  code: "#",
+                  code: "https://github.com/Sudeep1911/Hr-attrition-analysis",
                 },
                 {
                   name: "National Rail Performance Dashboard",
@@ -427,11 +429,11 @@ export default function Home() {
                   code: "https://github.com/01Vishwa/ZenDo-Task-Management-Application",
                 },
                 {
-                  name: "ZenDO - Task Management App",
+                  name: "Power Exchange simulation",
                   desc: "A task management app that uses AI to help users organize and prioritize their tasks effectively.",
-                  tech: ["React", "FastAPI", "MongoDB","TailwindCSS"],
+                  tech: ["Python", "Django", "MongoDB","Plotly"],
                   demo: "#",
-                  code: "#",
+                  code: "https://github.com/01Vishwa/energy_trading_game",
                 },
               ].map((p, i) => (
                 <Card
@@ -615,7 +617,7 @@ export default function Home() {
                     key={`${s.name}-${i}`}
                     className="group border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg"
                   >
-                    <CardContent className="p-6 sm:p-8">
+                    <CardContent className="p-4 sm:p-5">
                       <div className="flex items-start gap-4">
                         <div className="h-10 w-10 rounded-md border border-border grid place-items-center text-muted-foreground group-hover:text-foreground transition-colors">
                           {s.icon}
