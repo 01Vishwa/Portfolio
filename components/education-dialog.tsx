@@ -5,6 +5,7 @@ import {
 	DialogTrigger,
 	DialogContent,
 	DialogTitle,
+	DialogHeader,
 	DialogClose,
 } from "./ui/dialog"
 
@@ -33,18 +34,14 @@ export default function EducationDialog() {
 				</button>
 			</DialogTrigger>
 			<DialogContent
-				aria-labelledby="education-title"
 				className="max-w-[640px] w-[90vw] sm:w-full max-h-[80vh] p-6 sm:p-8 rounded-xl border border-border bg-card shadow-lg text-card-foreground animate-in fade-in-0 zoom-in-95 flex flex-col"
 				style={{ fontFamily: 'inherit' }}
 			>
-				{/* DialogTitle must be a direct child for accessibility */}
-				<DialogTitle
-					id="education-title"
-					className="text-xl sm:text-2xl font-semibold tracking-tight mb-2"
-					style={{ fontFamily: 'inherit' }}
-				>
-					Education
-				</DialogTitle>
+				<DialogHeader>
+					<DialogTitle className="text-xl sm:text-2xl font-semibold tracking-tight mb-2" style={{ fontFamily: 'inherit' }}>
+						Education
+					</DialogTitle>
+				</DialogHeader>
 				{/* Scrollable body */}
 				<div className="overflow-y-auto flex-1 pr-1" style={{paddingRight: '2px'}}>
 					<div className="flex flex-col gap-3">

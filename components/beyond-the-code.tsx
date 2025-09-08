@@ -24,7 +24,6 @@ const interests: Interest[] = [
   { key: "movies", label: "Watching Movies", icon: Film, color: "amber" },
   { key: "gaming", label: "Gaming", icon: Gamepad2, color: "sky" },
   { key: "music", label: "Listening to Music", icon: Music, color: "emerald" },
-  { key: "cooking", label: "Cooking", icon: ChefHat, color: "amber" },
 ]
 
 function useInView<T extends HTMLElement>(options?: IntersectionObserverInit) {

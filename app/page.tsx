@@ -143,7 +143,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    Available for work
+                    Seeking full-time Data Science opportunities
                   </div>
                   <div>India</div>
                 </div>
@@ -156,7 +156,7 @@ export default function Home() {
                       variant="outline"
                       className="group gap-3 rounded-lg transition-all duration-200 hover:scale-[1.02] hover:shadow-sm hover:border-muted-foreground/50 bg-transparent px-6 py-3"
                     >
-                      <a href="/resume.pdf" target="_blank" rel="noreferrer">
+                      <a href="/Vishwa_R.pdf" target="_blank" rel="noreferrer">
                         <FileText className="h-5 w-5" aria-hidden="true" />
                         <span>View Resume</span>
                       </a>
@@ -374,7 +374,7 @@ export default function Home() {
 
             {/* Currently Working On */}
             <div className="space-y-4">
-              <div className="text-sm text-muted-foreground font-mono">CURRENTLY WORKING ON</div>
+              <div className="text-sm text-muted-foreground font-mono">Currently Working On</div>
               <Card className="border border-border rounded-lg hover:border-muted-foreground/50 transition-colors duration-500">
                 <CardContent className="p-6 sm:p-8">
                   <div className="flex items-start gap-4 sm:gap-6">
@@ -453,13 +453,15 @@ export default function Home() {
                       ))}
                     </div>
                   </CardContent>
-                  <CardFooter className="flex items-center justify-between gap-3">
-                    <Button asChild size="sm" variant="secondary" className="group">
-                      <a href={p.demo} target="_blank" rel="noreferrer">
-                        Live Demo
-                        <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-                      </a>
-                    </Button>
+                  <CardFooter className={`flex items-center gap-3 ${p.name === "ZenDO - Task Management App" ? "justify-between" : "justify-end"}`}>
+                    {p.name === "ZenDO - Task Management App" && (
+                      <Button asChild size="sm" variant="secondary" className="group">
+                        <a href={p.demo} target="_blank" rel="noreferrer">
+                          Live Demo
+                          <ExternalLink className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                        </a>
+                      </Button>
+                    )}
                     <Button asChild size="sm" variant="outline" className="group bg-transparent">
                       <a href={p.code} target="_blank" rel="noreferrer">
                         Code
