@@ -322,9 +322,9 @@ export default function Home() {
                         </div>
                         <div className="space-y-2 text-muted-foreground leading-relaxed max-w-lg mt-3">
                           <ul className="list-disc list-inside space-y-1">
-                            <li>Developed HDL cholesterol prediction models using computer vision on retinal imaging datasets, enhancing diagnostic capabilities.</li>
-                            <li>Built AI-powered biomarker extraction solution achieving 98.5% R² accuracy and 99.9% correlation for cardiovascular risk assessment.</li>
-                            <li>Designed automated preprocessing pipeline for 6,000+ retinal images with advanced augmentation techniques.</li>
+                            <li>Researched and worked computer vision models for predicting health biomarkers from retinal imaging datasets.</li>
+                            <li>Built AI-powered solutions for automated biomarker extraction to support cardiovascular risk assessment.</li>
+                            <li>Designed and implemented preprocessing pipelines with advanced augmentation techniques for large-scale medical imaging data.</li>
                           </ul>
                         </div>
                       </div>
@@ -536,14 +536,14 @@ export default function Home() {
                 {
                   icon: <Brain className="h-5 w-5" />,
                   name: "TensorFlow",
-                  level: "Advanced",
+                  level: "Intermediate",
                   desc: "Deep learning, neural networks.",
                   cat: "Data Science",
                 },
                 {
                   icon: <Brain className="h-5 w-5" />,
                   name: "PyTorch",
-                  level: "Advanced",
+                  level: "Intermediate",
                   desc: "Computer vision, model training.",
                   cat: "Data Science",
                 },
