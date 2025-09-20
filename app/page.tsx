@@ -664,17 +664,18 @@ export default function Home() {
             <div className="space-y-6 sm:space-y-8">
               {[
                 {
-                  title: "Microsoft Power BI Desktop for Business Intelligence",
-                  excerpt: "Comprehensive course covering Power BI fundamentals, data modeling, visualization techniques, and business intelligence dashboard creation.",
-                  date: "Sept 2023",
-                  link: "https://www.udemy.com/certificate/UC-cdda0577-14fd-4edd-a691-63beccf0b085/",
-                },
-                {
                   title: "Machine Learning A-Z: AI, Python & R",
                   excerpt: "Complete machine learning course covering algorithms, data preprocessing, regression, classification, clustering, and deep learning with Python & R.",
                   date: "Apr 2024",
                   link: "https://www.udemy.com/certificate/UC-d887c517-24a4-4b85-8cc2-564f0c76f508/",
                 },
+                {
+                  title: "Microsoft Power BI Desktop for Business Intelligence",
+                  excerpt: "Comprehensive course covering Power BI fundamentals, data modeling, visualization techniques, and business intelligence dashboard creation.",
+                  date: "Sept 2023",
+                  link: "https://www.udemy.com/certificate/UC-cdda0577-14fd-4edd-a691-63beccf0b085/",
+                },
+                
               ].map((post, index) => (
                 <article
                   key={index}
