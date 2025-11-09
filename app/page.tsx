@@ -536,14 +536,14 @@ export default function Home() {
                 {
                   icon: <Brain className="h-5 w-5" />,
                   name: "TensorFlow",
-                  level: "Intermediate",
+                  level: "Beginner",
                   desc: "Deep learning, neural networks.",
                   cat: "Data Science",
                 },
                 {
                   icon: <Brain className="h-5 w-5" />,
                   name: "PyTorch",
-                  level: "Intermediate",
+                  level: "Beginner",
                   desc: "Computer vision, model training.",
                   cat: "Data Science",
                 },
