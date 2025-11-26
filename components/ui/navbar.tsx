@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
-import { Home, Briefcase, FolderOpen, Sparkles, Heart, Mail, Sun, Moon, Award } from "lucide-react"
+import { Home, Briefcase, FolderOpen, Sparkles, Mail, Sun, Moon, Award } from "lucide-react"
 import { useTheme } from "next-themes"
 
 const navItems = [
@@ -28,12 +28,6 @@ const navItems = [
     href: "#skills",
     icon: <Sparkles className="h-5 w-5" />,
     sectionId: "skills",
-  },
-  {
-    label: "Beyond Code",
-    href: "#beyond",
-    icon: <Heart className="h-5 w-5" />,
-    sectionId: "beyond",
   },
   {
     label: "Certificates",

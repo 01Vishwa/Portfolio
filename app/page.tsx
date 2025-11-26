@@ -7,7 +7,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github, Code2, Server, Brain, Cog, FileText, Linkedin, ChevronUp } from "lucide-react"
-import BeyondTheCode from "@/components/beyond-the-code"
 import LoadingScreen from "@/components/ui/loading-screen"
 import EducationDialog from "@/components/education-dialog"
 
@@ -101,7 +100,7 @@ export default function Home() {
 
       <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
         <div className="flex flex-col gap-4">
-          {["intro", "work", "projects", "skills", "beyond", "thoughts", "connect"].map((section) => (
+          {["intro", "work", "projects", "skills", "thoughts", "connect"].map((section) => (
             <button
               key={section}
               onClick={() => document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })}
@@ -274,9 +273,9 @@ export default function Home() {
                   <ul className="flex flex-wrap gap-2" role="list">
                     {["Python", "PyTorch", "Computer Vision", "Machine Learning", "Deep Learning", "Data Analysis"].map((skill) => (
                       <li key={skill}>
-                        <span
-                          className="inline-block px-3 py-1.5 text-xs border border-border/60 rounded-full text-muted-foreground hover:border-muted-foreground/80 hover:text-foreground transition-all duration-200 cursor-default focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:ring-offset-2 focus:ring-offset-background rounded-sm"
-                          tabIndex={0}
+                      <span
+                        className="inline-block px-3 py-1.5 text-xs border border-border/60 rounded-full text-muted-foreground hover:border-muted-foreground/80 hover:text-foreground transition-all duration-200 cursor-default focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:ring-offset-2 focus:ring-offset-background"
+                        tabIndex={0}
                           role="button"
                           aria-label={`Skill: ${skill}`}
                         >
@@ -642,19 +641,9 @@ export default function Home() {
         </section>
 
         <section
-          id="beyond"
-          ref={(el) => {
-            sectionsRef.current[4] = el
-          }}
-          className="min-h-screen py-20 sm:py-32 opacity-0"
-        >
-          <BeyondTheCode />
-        </section>
-
-        <section
           id="thoughts"
           ref={(el) => {
-            sectionsRef.current[5] = el
+            sectionsRef.current[4] = el
           }}
           className="min-h-screen py-20 sm:py-32 opacity-0"
         >
@@ -723,7 +712,7 @@ export default function Home() {
         <section
           id="connect"
           ref={(el) => {
-            sectionsRef.current[6] = el
+            sectionsRef.current[5] = el
           }}
           className="py-20 sm:py-32 opacity-0"
         >
