@@ -1,0 +1,47 @@
+[
+  {
+    "id": "skillsync",
+    "title": "SkillSync AI: Precision Hiring Powered by AI",
+    "description": "RAG-powered framework to revolutionize résumé screening by harnessing multi-source candidate data, driving accuracy, fairness, and explainability in talent evaluation.",
+    "technologies": ["Python", "GCP", "Lanchain", "Chat Bot", "Large Language Models"],
+    "status": "active",
+    "imageUrl": "/project-logo.png"
+  },
+  {
+    "id": "hr-attrition",
+    "title": "HR Attrition Prediction System",
+    "description": "Predictive models using Logistic Regression and Random Forest achieving 87.75% accuracy on IBM's HR dataset.",
+    "technologies": ["Python", "Flask", "Plotly", "Dash"],
+    "status": "completed",
+    "githubUrl": "https://github.com/Sudeep1911/Hr-attrition-analysis",
+    "imageUrl": ""
+  },
+  {
+    "id": "rail-dashboard",
+    "title": "National Rail Performance Dashboard",
+    "description": "Interactive Power BI dashboard analyzing 31,653 railway records with 81% on-time performance insights.",
+    "technologies": ["Python", "Power BI", "Excel", "DAX"],
+    "status": "completed",
+    "githubUrl": "https://github.com/01Vishwa/Maven_Rail_Challenge",
+    "imageUrl": ""
+  },
+  {
+    "id": "zendo",
+    "title": "ZenDO - Task Management App",
+    "description": "A task management app that uses AI to help users organize and prioritize their tasks effectively.",
+    "technologies": ["React", "FastAPI", "MongoDB", "TailwindCSS"],
+    "status": "completed",
+    "githubUrl": "https://github.com/01Vishwa/ZenDo-Task-Management-Application",
+    "liveUrl": "https://zen-do-rosy.vercel.app/",
+    "imageUrl": ""
+  },
+  {
+    "id": "power-exchange",
+    "title": "Power Exchange simulation",
+    "description": "A task management app that uses AI to help users organize and prioritize their tasks effectively.",
+    "technologies": ["Python", "Django", "MongoDB", "Plotly"],
+    "status": "completed",
+    "githubUrl": "https://github.com/01Vishwa/energy_trading_game",
+    "imageUrl": ""
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {"name": "Python", "category": "Programming", "icon": "Code2"},
+  {"name": "R", "category": "Programming", "icon": "Code2"},
+  {"name": "SQL", "category": "Programming", "icon": "Server"},
+  {"name": "NodeJS", "category": "Programming", "icon": "Code2"},
+  {"name": "TensorFlow", "category": "Data Science", "icon": "Brain"},
+  {"name": "PyTorch", "category": "Data Science", "icon": "Brain"},
+  {"name": "Scikit-learn", "category": "Data Science", "icon": "Brain"},
+  {"name": "Pandas & NumPy", "category": "Data Science", "icon": "Brain"},
+  {"name": "Django", "category": "Web Dev", "icon": "Server"},
+  {"name": "Flask", "category": "Web Dev", "icon": "Server"},
+  {"name": "FastAPI", "category": "Web Dev", "icon": "Server"},
+  {"name": "Power BI", "category": "Tools", "icon": "Cog"},
+  {"name": "Tableau", "category": "Tools", "icon": "Cog"},
+  {"name": "Google Cloud", "category": "Tools", "icon": "Cog"},
+  {"name": "Git & GitHub", "category": "Tools", "icon": "Cog"}
+]

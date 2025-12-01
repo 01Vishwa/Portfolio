@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ml-az",
+    "title": "Machine Learning A-Z: AI, Python & R",
+    "issuer": "Udemy",
+    "date": "Apr 2024",
+    "credentialUrl": "https://www.udemy.com/certificate/UC-d887c517-24a4-4b85-8cc2-564f0c76f508/",
+    "description": "Complete machine learning course covering algorithms, data preprocessing, regression, classification, clustering, and deep learning with Python & R."
+  },
+  {
+    "id": "powerbi",
+    "title": "Microsoft Power BI Desktop for Business Intelligence",
+    "issuer": "Udemy",
+    "date": "Sept 2023",
+    "credentialUrl": "https://www.udemy.com/certificate/UC-cdda0577-14fd-4edd-a691-63beccf0b085/",
+    "description": "Comprehensive course covering Power BI fundamentals, data modeling, visualization techniques, and business intelligence dashboard creation."
+  }
+]

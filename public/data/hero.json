@@ -1,0 +1,24 @@
+{
+  "name": "Vishwa R",
+  "location": "India",
+  "resumeUrl": "/Vishwa_R.pdf",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/r-vishwa/",
+    "github": "https://github.com/01Vishwa",
+    "kaggle": "https://www.kaggle.com/rv1922",
+    "whatsapp": "https://wa.me/917708690518"
+  },
+  "currentRole": {
+    "title": "Data Science Intern",
+    "company": "Prediscan Medtech",
+    "period": "2024 — 2025"
+  },
+  "focusSkills": [
+    "Python",
+    "PyTorch",
+    "Computer Vision",
+    "Machine Learning",
+    "Deep Learning",
+    "Data Analysis"
+  ]
+}

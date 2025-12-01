@@ -1,14 +1,15 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist } from "next/font/google"
+import { Turret_Road } from "next/font/google"
 import "./globals.css"
 import { Navbar } from "@/components/ui/navbar"
 import { ThemeProvider } from "@/components/theme-provider"
 
-const geist = Geist({
+const turretRoad = Turret_Road({
   subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "700", "800"],
   display: "swap",
-  variable: "--font-geist",
+  variable: "--font-turret-road",
 })
 
 export const metadata: Metadata = {
@@ -23,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
     return (
-  <html lang="en" className={`${geist.variable}`} suppressHydrationWarning>
-        <body className="font-sans antialiased">
+  <html lang="en" className={`${turretRoad.variable}`} suppressHydrationWarning>
+        <body className="antialiased" style={{ fontFamily: 'var(--font-turret-road)' }}>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             {/* Navbar at the top */}
             <div className="relative min-h-screen">

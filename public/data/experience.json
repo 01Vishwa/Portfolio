@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Data Science Intern",
+    "company": "Prediscan Medtech",
+    "location": "Chennai, India",
+    "period": "2024 - 2025",
+    "responsibilities": [
+      "Researched and worked computer vision models for predicting health biomarkers from retinal imaging datasets.",
+      "Built AI-powered solutions for automated biomarker extraction to support cardiovascular risk assessment.",
+      "Designed and implemented preprocessing pipelines with advanced augmentation techniques for large-scale medical imaging data."
+    ],
+    "skills": ["Python", "PyTorch", "Computer Vision", "Deep Learning"]
+  }
+]
